@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     lint: {
-      files: ['grunt.js', 'index.js', 'lib/*.js', 'test/*.js']
+      files: ['grunt.js', 'index.js', 'lib/*.js']
     },
     watch: {
       files: ['grunt.js', 'index.js', 'lib/*.js', 'test/*.js'],
@@ -33,7 +33,6 @@ module.exports = function (grunt) {
         noarg: true,
         nonew: true,
         plusplus: true,
-        regexp: true,
         noempty: true,
         sub: true,
         undef: true,
@@ -42,14 +41,7 @@ module.exports = function (grunt) {
         browser: true,
         node: true,
         indent: 2,
-        onevar: true,
         white: true
-      },
-      globals: {
-        describe: true,
-        expect: true,
-        it: true,
-        before: true
       }
     },
     uglify: {}

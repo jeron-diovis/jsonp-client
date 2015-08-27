@@ -1,8 +1,8 @@
 {
-  "name": "jsonp-client",
-  "version": "1.0.1",
-  "description": "jsonp minimal client for the browser (1.4K) and Node.js",
-  "author": "Bermi Ferrer <bermi@bermilabs.com>",
+  "name": "isomorphic-jsonp",
+  "version": "1.0.0",
+  "description": "jsonp minimal client for the browser and Node.js",
+  "author": "Jeron Diovis",
   "keywords": [
     "jsonp",
     "async",
@@ -15,7 +15,7 @@
     "same origin"
   ],
   "bugs": {
-    "url": "https://github.com/bermi/jsonp-client/issues"
+    "url": "https://github.com/jeron-diovis/jsonp-client/issues"
   },
   "licenses": [
     {
@@ -25,21 +25,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bermi/jsonp-client.git"
+    "url": "git://github.com/jeron-diovis/jsonp-client.git"
   },
   "main": "lib/jsonp-client.js",
   "browser": {
-    "superagent-mock": false,
     "superagent": false,
     "./jsonp-node.js": false
   },
   "dependencies": {
     "superagent": "1.2.0",
-    "superagent-mock": "1.1.0"
+    "promise": "^7.0.4"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "grunt": "~0.3.17",
+    "express": "^4.13.3",
+    "grunt": "^0.3.17",
     "mocha": "~2.2.4"
   },
   "scripts": {
